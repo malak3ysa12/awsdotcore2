@@ -9,7 +9,10 @@ phases:
       - echo Build started on `date`
       - dotnet publish -c release -o ./build_output/SampleCore.csproj
 artifacts:
+  discard-paths: yes
   files:
     - CodeBuild-SampleCore/build_output/**/*
     - scripts/**/*
     - appspec.yml
+    - deploy/*
+    
