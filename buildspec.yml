@@ -6,8 +6,9 @@ phases:
       - dotnet restore ./awsdotcore/awsdotcore.csproj
   build:
     commands:
-      - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output/SampleCore.csproj
+      - nuget restore
+      - msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\Work\dotnet\vidro\ /t:Package
+artifacts:
       - cp  ./awsdotcore/aws-windows-deployment-manifest.json  ./awsdotcore/staging/
 
 artifacts:
