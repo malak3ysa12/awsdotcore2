@@ -14,7 +14,6 @@ artifacts:
 artifacts:
   discard-paths: yes
   files:
-  files:
     - '**/*'
   base-directory: C:\Work\dotnet\vidro\AWSBeanstalkHelloWorld\AWSBeanstalkHelloWorldWebApp\obj\Release\Package\PackageTmp\'
     
