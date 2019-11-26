@@ -12,7 +12,6 @@ artifacts:
       - cp  ./awsdotcore/aws-windows-deployment-manifest.json  ./awsdotcore/staging/
 
 artifacts:
-  discard-paths: yes
   files:
     - '**/*'
   base-directory: C:\Work\dotnet\vidro\AWSBeanstalkHelloWorld\AWSBeanstalkHelloWorldWebApp\obj\Release\Package\PackageTmp\'
