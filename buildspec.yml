@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Build started on `date`
       - dotnet publish -c release -o ./build_output/SampleCore.csproj
-      - cp awsdotcore/aws-windows-deployment-manifest.json ./awsdotcore2/staging/
+      - cp ./awsdotcore2/awsdotcore/aws-windows-deployment-manifest.json ./awsdotcore2/staging/
 
 artifacts:
   discard-paths: yes
