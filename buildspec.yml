@@ -8,7 +8,6 @@ phases:
     commands:
       - nuget restore
       - msbuild ./awsdotcore/awsdotcore.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\Work\dotnet\vidro\ /t:Package
-artifacts:
       - cp  ./awsdotcore/aws-windows-deployment-manifest.json  ./awsdotcore/staging/
 
 artifacts:
