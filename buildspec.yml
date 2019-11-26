@@ -13,8 +13,7 @@ phases:
 artifacts:
   discard-paths: yes
   files:
-    - CodeBuild-SampleCore/build_output/**/*
-    - scripts/**/*
-    - appspec.yml
-    - deploy/*
+  files:
+    - '**/*'
+  base-directory: C:\Work\dotnet\vidro\AWSBeanstalkHelloWorld\AWSBeanstalkHelloWorldWebApp\obj\Release\Package\PackageTmp\'
     
